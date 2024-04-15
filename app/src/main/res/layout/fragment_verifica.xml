@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="10dp">
+
     <TextView
         android:id="@+id/tvTelefone"
         android:layout_width="wrap_content"
@@ -24,6 +25,7 @@
         android:textSize="20sp"
         />
 
+
     <EditText
         android:id="@+id/edtTelefone"
         android:layout_width="match_parent"
@@ -32,26 +34,27 @@
         android:hint="Digite seu telefone"
         android:inputType="number"
         app:layout_constraintTop_toBottomOf="@+id/tvTelefone"
-        tools:layout_editor_absoluteX="10dp" />
-
+        tools:layout_editor_absoluteX="-16dp" />
 
     <EditText
         android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:hint="Digite seu Email"
         android:inputType="text"
-        app:layout_constraintTop_toBottomOf="@+id/edtTelefone"/>
+        app:layout_constraintTop_toBottomOf="@+id/edtTelefone"
+        tools:layout_editor_absoluteX="10dp" />
 
     <Button
         android:id="@+id/btnEnviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:text="Enviar"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/edtEmail"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
 </androidx.constraintlayout.widget.ConstraintLayout>

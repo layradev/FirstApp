@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.layra.firstapp.R
-import com.layra.firstapp.databinding.FragmentCalculoBinding
+import com.layra.firstapp.databinding.FragmentPessoaBinding
 import com.layra.firstapp.databinding.FragmentVerificaBinding
 
 class VerificaFragment : Fragment() {

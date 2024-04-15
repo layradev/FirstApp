@@ -8,18 +8,23 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.layra.firstapp.view.HomeFragment"
-        android:label="fragment_home"
+        android:label="First App"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/pessoaFragment"
         android:name="com.layra.firstapp.view.PessoaFragment"
-        android:label="PessoaFragment" />
+        android:label="Pessoa"
+        tools:layout="@layout/fragment_verifica"/>
 
     <fragment
         android:id="@+id/verificaFragment"
         android:name="com.layra.firstapp.view.VerificaFragment"
-        android:label="VerificaFragment" />
-
-
+        android:label="VerificaFragment"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/allPessoasFragment"
+        android:name="com.layra.firstapp.view.AllPessoasFragment"
+        android:label="Pessoas"
+        tools:layout="@layout/fragment_all_pessoas"/>
 </navigation>

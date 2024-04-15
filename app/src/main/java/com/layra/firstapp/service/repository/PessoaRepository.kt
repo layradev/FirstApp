@@ -8,14 +8,14 @@ class PessoaRepository(context: Context) {
     private val firstAppDb = FirstAppDataBase.getDataBase(context).pessoaDAO()
 
     suspend fun insertPessoa(pessoa: Pessoa){
-        firstAppDb.insert(pessoa)
+         firstAppDb.insert(pessoa)
     }
 
-    suspend fun getPessoa(id: Int){
-        firstAppDb.getPesoa(id)
+    suspend fun getPessoa(id: Int): Pessoa{
+         return firstAppDb.getPesoa(id)
     }
 
-    suspend fun getPessoa(): List<Pessoa> {
+    suspend fun getPessoas(): List<Pessoa> {
         return firstAppDb.getALL()
     }
 
